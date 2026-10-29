@@ -1,0 +1,196 @@
+# PAR sheet — Kastel Fortune
+Generated 2026-10-29 by "scripts/make_par_sheets.py" from the exact analysis in "results/kastel_exact.pkl"
+
+## 1. Game summary
+
+| Parameter | Value |
+|:---|:---|
+| Grid | 5 reels x 3 rows |
+| Paylines | 20 (fixed), pays left to right |
+| Bet unit | all pays in multiples of the total bet |
+| Max win cap | 1,500x |
+| **RTP (exact, incl. max-win cap)** | **96.2022%** |
+| RTP split | lines 58.705% + scatter pays 1.279% + free spins 36.218% |
+| Cap cost | 0.000021 pp (uncapped RTP 96.2022%) |
+| Hit frequency (any win) | 34.811% |
+| Std dev per spin | 7.5518x bet  (volatility index 1.96σ = 14.80) |
+| Free-spins frequency | 1 in 187 spins (0.5345%) |
+| Free spins awarded | 3 scatters → 10 spins, 4 scatters → 15 spins, 5 scatters → 20 spins |
+| Multiplier ladder | starts x1, +1 after every winning spin, cap x5 |
+| Retrigger | 3+ scatters in free spins → +5 spins, max 4 retriggers |
+| Base combinations | 55,520,640 (all enumerated) |
+| Free-spin combinations | 12,644,352 (all enumerated) |
+
+## 2. Paytable (x total bet)
+
+| Symbol | 2 of a kind | 3 of a kind | 4 of a kind | 5 of a kind |
+|:---|---:|---:|---:|---:|
+| H1 — Kastel (tvrđava) | – | 2 | 8 | 40 |
+| H2 — Vrbas | – | 1.5 | 5 | 25 |
+| H3 — Dajak čamac | – | 1 | 3 | 15 |
+| H4 — Lipa | – | 0.8 | 2 | 10 |
+| A — A | – | 0.4 | 1.2 | 5 |
+| K — K | – | 0.3 | 1 | 4 |
+| Q — Q | – | 0.3 | 0.8 | 3 |
+| J — J | – | 0.2 | 0.6 | 2.5 |
+
+Scatter pays (anywhere on the grid, x total bet): 3 scatters = 2x, 4 scatters = 10x, 5 scatters = 50x
+
+## 3. Reel strips
+
+**Base game** — count per reel (probability that a given row of that reel shows the symbol):
+
+| Symbol | Reel 1 | Reel 2 | Reel 3 | Reel 4 | Reel 5 |
+|:---|---:|---:|---:|---:|---:|
+| W | 0 (0.00%) | 2 (5.56%) | 2 (5.56%) | 2 (5.71%) | 0 (0.00%) |
+| S | 1 (2.78%) | 1 (2.78%) | 1 (2.78%) | 1 (2.86%) | 1 (2.94%) |
+| H1 | 3 (8.33%) | 4 (11.11%) | 4 (11.11%) | 4 (11.43%) | 3 (8.82%) |
+| H2 | 4 (11.11%) | 4 (11.11%) | 3 (8.33%) | 2 (5.71%) | 5 (14.71%) |
+| H3 | 4 (11.11%) | 3 (8.33%) | 3 (8.33%) | 2 (5.71%) | 4 (11.76%) |
+| H4 | 4 (11.11%) | 2 (5.56%) | 3 (8.33%) | 5 (14.29%) | 4 (11.76%) |
+| A | 5 (13.89%) | 5 (13.89%) | 5 (13.89%) | 7 (20.00%) | 6 (17.65%) |
+| K | 5 (13.89%) | 5 (13.89%) | 5 (13.89%) | 3 (8.57%) | 4 (11.76%) |
+| Q | 5 (13.89%) | 5 (13.89%) | 5 (13.89%) | 5 (14.29%) | 4 (11.76%) |
+| J | 5 (13.89%) | 5 (13.89%) | 5 (13.89%) | 4 (11.43%) | 3 (8.82%) |
+| **strip length** | **36** | **36** | **36** | **35** | **34** |
+
+Full strips (top to bottom, wrapping):
+
+- Reel 1: `A K Q J H2 H3 H4 A K Q J H1 H2 H3 A K Q J H4 H1 H2 H3 A K Q J H4 S H2 A K Q J H3 H4 H1`
+- Reel 2: `A K Q J H2 S H4 A K Q J H1 H2 H3 A K Q J W H1 H2 A K Q J H4 H3 H1 H2 A K Q J W H3 H1`
+- Reel 3: `A K Q J S H2 H1 A K Q J H3 H4 W A K Q J H1 H2 H3 A K Q J H4 H1 W A K Q J H2 H3 H1 H4`
+- Reel 4: `H4 A Q K H3 H1 A J H4 Q H2 A W J H4 Q A H1 K S H3 A H4 Q H1 J A K W H4 Q A H1 H2 J`
+- Reel 5: `A H1 H2 J H3 A H4 K H2 Q H1 A J H3 H4 H2 K A Q S H3 H2 A H4 K Q H1 J A H2 H3 H4 K Q`
+
+
+**Free spins** — count per reel (probability that a given row of that reel shows the symbol):
+
+| Symbol | Reel 1 | Reel 2 | Reel 3 | Reel 4 | Reel 5 |
+|:---|---:|---:|---:|---:|---:|
+| W | 0 (0.00%) | 4 (14.29%) | 4 (14.29%) | 4 (14.29%) | 0 (0.00%) |
+| S | 1 (4.17%) | 1 (3.57%) | 1 (3.57%) | 1 (3.57%) | 1 (4.17%) |
+| H1 | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| H2 | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| H3 | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| H4 | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| A | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| K | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| Q | 3 (12.50%) | 3 (10.71%) | 3 (10.71%) | 3 (10.71%) | 3 (12.50%) |
+| J | 2 (8.33%) | 2 (7.14%) | 2 (7.14%) | 2 (7.14%) | 2 (8.33%) |
+| **strip length** | **24** | **28** | **28** | **28** | **24** |
+
+Full strips (top to bottom, wrapping):
+
+- Reel 1: `H1 H2 H3 H4 A K Q J H1 H2 H3 H4 A K Q S H1 H2 H3 H4 A K Q J`
+- Reel 2: `W H3 H4 A K Q J W H1 H2 H3 H4 A K W Q J H1 H2 H3 H4 W A K Q S H1 H2`
+- Reel 3: `W A K Q S H1 H2 W H3 H4 A K Q J W H1 H2 H3 H4 A K W Q J H1 H2 H3 H4`
+- Reel 4: `W Q J H1 H2 H3 H4 W A K Q S H1 H2 W H3 H4 A K Q J W H1 H2 H3 H4 A K`
+- Reel 5: `A K Q J H1 H2 H3 H4 A K Q J H1 H2 H3 H4 A K Q S H1 H2 H3 H4`
+
+
+## 4. Line-win contributions (base game, exact)
+
+Probabilities are for one payline; the RTP share is summed over all 20 lines (every line has the same distribution).
+
+| Combination | P (one line) |  | Pay | E[win] all lines | RTP share |
+|:---|---:|---:|---:|---:|---:|
+| H1 x3 | 1.917989e-03 | 1 in 521 | 2 | 0.076720 | 7.6720% |
+| H1 x4 | 3.618114e-04 | 1 in 2,764 | 8 | 0.057890 | 5.7890% |
+| H1 x5 | 3.501401e-05 | 1 in 28,560 | 40 | 0.028011 | 2.8011% |
+| H2 x3 | 2.278072e-03 | 1 in 439 | 1.5 | 0.068342 | 6.8342% |
+| H2 x4 | 2.507176e-04 | 1 in 3,989 | 5 | 0.025072 | 2.5072% |
+| H2 x5 | 4.322717e-05 | 1 in 23,134 | 25 | 0.021614 | 2.1614% |
+| H3 x3 | 1.898393e-03 | 1 in 527 | 1 | 0.037968 | 3.7968% |
+| H3 x4 | 2.161358e-04 | 1 in 4,627 | 3 | 0.012968 | 1.2968% |
+| H3 x5 | 2.881811e-05 | 1 in 34,700 | 15 | 0.008645 | 0.8645% |
+| H4 x3 | 1.371742e-03 | 1 in 729 | 0.8 | 0.021948 | 2.1948% |
+| H4 x4 | 3.025902e-04 | 1 in 3,305 | 2 | 0.012104 | 1.2104% |
+| H4 x5 | 4.034536e-05 | 1 in 24,786 | 10 | 0.008069 | 0.8069% |
+| A x3 | 3.900892e-03 | 1 in 256 | 0.4 | 0.031207 | 3.1207% |
+| A x4 | 1.112019e-03 | 1 in 899 | 1.2 | 0.026688 | 2.6688% |
+| A x5 | 2.382898e-04 | 1 in 4,197 | 5 | 0.023829 | 2.3829% |
+| K x3 | 4.501029e-03 | 1 in 222 | 0.3 | 0.027006 | 2.7006% |
+| K x4 | 6.619160e-04 | 1 in 1,511 | 1 | 0.013238 | 1.3238% |
+| K x5 | 8.825547e-05 | 1 in 11,331 | 4 | 0.007060 | 0.7060% |
+| Q x3 | 4.200960e-03 | 1 in 238 | 0.3 | 0.025206 | 2.5206% |
+| Q x4 | 9.266824e-04 | 1 in 1,079 | 0.8 | 0.014827 | 1.4827% |
+| Q x5 | 1.235577e-04 | 1 in 8,093 | 3 | 0.007413 | 0.7413% |
+| J x3 | 4.350995e-03 | 1 in 230 | 0.2 | 0.017404 | 1.7404% |
+| J x4 | 8.207758e-04 | 1 in 1,218 | 0.6 | 0.009849 | 0.9849% |
+| J x5 | 7.942992e-05 | 1 in 12,590 | 2.5 | 0.003971 | 0.3971% |
+| **total** |  | line hit 2.975% |  | **0.587051** | **58.7051%** |
+
+## 5. Scatters (base game, exact)
+
+| Scatters | Probability |  | Pay | RTP share |
+|---:|---:|---:|---:|---:|
+| 0 | 6.420946e-01 | 1 in 1.56 | – | – |
+| 1 | 2.974513e-01 | 1 in 3.36 | – | – |
+| 2 | 5.510913e-02 | 1 in 18.15 | – | – |
+| 3 | 5.104264e-03 | 1 in 196 | 2 | 0.010209 |
+| 4 | 2.363445e-04 | 1 in 4,231 | 10 | 0.002363 |
+| 5 | 4.376751e-06 | 1 in 228,480 | 50 | 0.000219 |
+
+## 6. Free spins (exact, absorbing Markov chain)
+
+One free spin has four outcome classes; their exact probabilities (from full enumeration of the free-spin strips):
+
+| Class | Probability | E[line win × 1{class}] (unmultiplied) |
+|:---|---:|---:|
+| win_retrig | 0.004797 | 0.020221x |
+| nowin_retrig | 0.007643 | 0.000000x |
+| win_noretrig | 0.470596 | 1.958343x |
+| nowin_noretrig | 0.516964 | 0.000000x |
+
+Per free spin: P(line win) = 47.539%, P(retrigger) = 1.244%, E[unmultiplied line win] = 1.9786x.
+
+State = (spins remaining, multiplier, retriggers used). Feature value by trigger size:
+
+| Trigger | P(trigger) | Initial spins | E[total spins] | E[payout] | median | P(payout = 0) | P(≥100x) | P(≥500x) |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 3 scatters | 0.005104 | 10 | 10.663 | 65.40x | 46.2x | 0.0014 | 0.1816 | 0.00250 |
+| 4 scatters | 0.000236 | 15 | 15.995 | 116.76x | 92.4x | 0.0001 | 0.4545 | 0.00911 |
+| 5 scatters | 0.000004 | 20 | 21.326 | 169.37x | 140.9x | 0.0000 | 0.7168 | 0.02197 |
+
+Averaged over trigger sizes: E[payout | feature] = 67.76x, std 70.71x, median 47.8x, P(zero) = 0.0013.
+
+## 7. Distribution of the total win of a base-game spin (exact)
+
+Includes line wins, scatter pays and the whole free-spins feature it may trigger; the max-win cap is applied.
+
+| Win per spin | Probability |  |
+|:---|---:|---:|
+| >= 1x | 1.7963e-01 | 1 in 5.57 |
+| >= 2x | 8.5587e-02 | 1 in 11.68 |
+| >= 5x | 2.8295e-02 | 1 in 35.34 |
+| >= 10x | 1.1337e-02 | 1 in 88.21 |
+| >= 20x | 6.3569e-03 | 1 in 157 |
+| >= 50x | 2.7789e-03 | 1 in 360 |
+| >= 100x | 1.0943e-03 | 1 in 914 |
+| >= 200x | 2.6388e-04 | 1 in 3,790 |
+| >= 500x | 1.5544e-05 | 1 in 64,336 |
+| >= 1,000x | 2.3150e-07 | 1 in 4,319,606 |
+| = max win 1,500x | 1.9394e-09 | 1 in 515,636,176 |
+
+Quantiles of the per-spin win: q50: 0x, q90: 1.5x, q99: 10.4x, q99.9: 105.2x, q99.99: 290.5x
+
+## 8. Exact vs Monte-Carlo
+
+| Quantity | Exact | Simulation (100,000,000 spins, seed 2024) |  |
+|:---|:---|:---|:---|
+| RTP | 96.2022% | 96.1923% ± 0.1480 pp | inside CI |
+| Hit rate | 34.811% | 34.815% |  |
+| Std dev / spin | 7.5518x | 7.5503x |  |
+| Feature frequency | 1 in 187.1 | 1 in 187.1 |  |
+| Feature RTP share | 36.218% | 36.226% |  |
+| Max win observed |  | 1,197.7x |  |
+
+## 9. Assumptions and notes
+
+- Each reel stops uniformly at random; reels are independent; the visible window is 3 consecutive strip positions.
+- Lines pay left to right only, highest win per line; wild substitutes for all symbols except the scatter and has no pays of its own (wilds sit on reels 2-4 only, so a pure-wild run starting on reel 1 cannot occur).
+- Companion Excel model: docs/Kastel_Fortune_math_model.xlsx reproduces the RTP decomposition and the free-spins Markov chain with live formulas.
+- Scatter pays are added to line wins. Scatters do not pay inside free spins (they only retrigger).
+- The multiplier applies to the line wins of the spin on which it is active and climbs *after* a winning spin.
+- The max-win cap truncates the total win of a spin including its feature; the exact distribution folds the tail into the cap bin.
+- Max-win reachability: P(hit the 1,500x cap) = 1 in 515,636,176 spins. With a 5,000x cap it would be 1 in ~6e16 — unreachable — which is why the design uses 1,500x.
