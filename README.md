@@ -115,10 +115,9 @@ slotmath/        engine.py (vectorised reels/lines), exact.py (enumeration, conv
 games/           kastel_fortune.py, sugar_heaven_ref.py, book_of_arcane_ref.py (+ *_reels.json)
 scripts/         calibrate_*.py, run_exact_*.py, run_sim.py, make_par_sheets.py,
                  plot_exact_vs_sim.py, rng_tests.py
-docs/            PAR_SHEET_*.md
-results/         exact analyses (json/pkl), simulation json + plots
+docs/            PAR_SHEET_*.md, Kastel_Fortune_math_model.xlsx
+results/         exact analyses (json), simulation json + plots
 tests/           unit tests (line evaluation, exact vs enumeration vs MC, Markov closed forms)
-VODIC.md         step-by-step guide in Serbian (concepts, maths, how to present it)
 ```
 
 ## Run
