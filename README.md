@@ -115,7 +115,7 @@ slotmath/        engine.py (vectorised reels/lines), exact.py (enumeration, conv
 games/           kastel_fortune.py, sugar_heaven_ref.py, book_of_arcane_ref.py (+ *_reels.json)
 scripts/         calibrate_*.py, run_exact_*.py, run_sim.py, make_par_sheets.py,
                  plot_exact_vs_sim.py, rng_tests.py
-docs/            PAR_SHEET_*.md, Kastel_Fortune_math_model.xlsx
+docs/            PAR_SHEET_*.md, Kastel_Fortune_math_model (1).xlsx
 results/         exact analyses (json), simulation json + plots
 tests/           unit tests (line evaluation, exact vs enumeration vs MC, Markov closed forms)
 ```
