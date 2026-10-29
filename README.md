@@ -133,6 +133,3 @@ python scripts/make_par_sheets.py
 
 Everything is deterministic (fixed seeds); the only hard dependency is NumPy.
 
-## License
-
-MIT.
