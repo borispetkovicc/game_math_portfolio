@@ -1,4 +1,4 @@
-# slot-math-portfolio
+# game-math-portfolio
 
 Exact mathematics for slot games: reel-strip models solved by full enumeration,
 free-spins features solved as absorbing Markov chains (to the full payout
