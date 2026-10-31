@@ -1,11 +1,11 @@
 """Calibration helpers: steer reel-strip composition towards RTP / volatility targets.
 
-Calibration is where most of a game mathematician's day goes: the paytable and
-feature rules are fixed by design, and the *symbol counts on each reel strip*
-are the dials that set RTP, hit frequency and volatility. We use a greedy local
-search over single-symbol swaps, scored with cheap exact means (symbol-tuple
-enumeration) plus a Monte-Carlo estimate of the free-spin per-spin histogram;
-the final numbers are then recomputed exactly by full enumeration.
+Calibration: the paytable and feature rules are fixed by design, and the 
+*symbol counts on each reel strip* are the dials that set RTP, hit frequency
+and volatility. We use a greedy local search over single-symbol swaps, scored
+with cheap exact means (symbol-tuple enumeration) plus a Monte-Carlo estimate
+of the free-spin per-spin histogram. The final numbers are then recomputed
+exactly by full enumeration.
 """
 
 from __future__ import annotations
