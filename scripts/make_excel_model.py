@@ -1,4 +1,4 @@
-"""Generate docs/Kastel_Fortune_math_model.xlsx — the Kastel Fortune math model as a LIVE Excel workbook.
+"""Generate docs/Kastel_Fortune_math_model (1).xlsx — the Kastel Fortune math model as a LIVE Excel workbook.
 
 Everything that can be exact in closed form is a formula: reel-strip counts (COUNTIF), per-reel symbol
 probabilities, the single-line expected value, the scatter-count distribution (Poisson-binomial DP), the
@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from games import kastel_fortune as kf      # noqa: E402
 
-OUT = ROOT / "docs" / "Kastel_Fortune_math_model.xlsx"
+OUT = ROOT / "docs" / "Kastel_Fortune_math_model (1).xlsx"
 
 # ---- styles --------------------------------------------------------------
 FONT = "Arial"
