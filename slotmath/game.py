@@ -3,14 +3,13 @@
 Conventions used throughout the package
 ---------------------------------------
 * Every win is expressed in multiples of the TOTAL BET (e.g. 2.5 means 2.5 x bet).
-  Modern online slots are specified this way; it keeps the maths independent of
-  coin sizes and line counts.
+  This keeps the maths independent of coin sizes and line counts.
 * A reel strip is a 1-D integer array of symbol ids. A spin picks one uniformly
-  random *stop* per reel; the visible window is the `rows` consecutive strip
+  random *stop* per reel. The visible window is the "rows" consecutive strip
   positions starting at the stop (wrapping around).
 * Paylines are given as one row index per reel (0 = top row).
-* Line wins pay left-to-right only; the wild substitutes for every symbol except
-  the scatter; a line pays the better of (a) the run of the first non-wild
+* Line wins pay left-to-right only. The wild symbol substitutes for every symbol except
+  the scatter. A line pays the better of (a) the run of the first non-wild
   symbol and (b) the run of pure wilds.
 """
 
