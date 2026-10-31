@@ -1,5 +1,5 @@
 # PAR sheet — Sugar Heaven (reference model)
-Generated 2026-10-10. Original model fitted to the public spec of Just Slots' Sugar Heaven (https://www.just-slots.com/games/sugar-heaven); strips and paytable are ours.
+Original model fitted to the public spec of Just Slots' Sugar Heaven (https://www.just-slots.com/games/sugar-heaven); strips and paytable are ours.
 
 ## 1. Game summary
 
