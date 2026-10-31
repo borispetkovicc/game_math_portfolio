@@ -15,8 +15,7 @@ Three games:
 
 > The reference models are *not* the providers' proprietary math (reel strips and
 > paytables are never published). They are original models whose mechanics and
-> headline numbers match the public specification — which is exactly the job a
-> game mathematician does when handed a design brief.
+> headline numbers match the public specification.
 
 ## Headline results
 
