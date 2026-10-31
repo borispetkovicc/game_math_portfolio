@@ -20,7 +20,7 @@ evaluated by memoised recursion — no linear system is needed, and the result i
 exact up to floating point. The same recursion with means instead of
 distributions gives expectations in microseconds (used during calibration).
 
-Payouts live on a grid of width `bin_width` (x bet); multiplying a payout by an
+Payouts live on a grid of width "bin_width" (x bet). Multiplying a payout by an
 integer multiplier m maps bin b -> bin m*b exactly.
 """
 
