@@ -1,7 +1,7 @@
 """Calibrate the Sugar Heaven reference model to its PUBLIC spec (RTP 96.42 %, hit 31 %).
 
 Usage: python scripts/calibrate_sugar.py [--iters 500]
-The free-spin strips are fixed; their value is estimated by simulation once
+The free-spin strips are fixed. Their value is estimated by simulation once
 (300k features per trigger size). Base strips are tuned by local search on
 exact means + a fixed-seed Monte-Carlo hit rate.
 """
