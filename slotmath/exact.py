@@ -20,8 +20,8 @@ Three levels of exactness are used, each as cheap as the question allows:
    Lines overlap, so the *distribution* of the total is not a product. We
    enumerate every stop combination (prod of strip lengths, ~3e7 for 5 reels
    of ~32 stops) in vectorised chunks. All combinations are equiprobable, so
-   a histogram of outcomes is the exact distribution. This is exactly "total
-   combinations" from PAR sheet.
+   a histogram of outcomes is the exact distribution. This is "total
+   combinations" for PAR sheet.
 """
 
 from __future__ import annotations
@@ -162,7 +162,7 @@ def enumerate_grid(
 ) -> GridEnumeration:
     """Enumerate EVERY stop combination and histogram (scatter count, total line win).
 
-    The first `chunk_reels` reels are iterated in Python; the remaining reels are
+    The first `chunk_reels` reels are iterated in Python. The remaining reels are
     expanded with meshgrid and evaluated vectorised. For 5 reels x 32 stops this
     is 1024 chunks of 32768 grids.
 
