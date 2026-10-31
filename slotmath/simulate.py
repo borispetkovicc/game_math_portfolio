@@ -1,6 +1,6 @@
 """Monte-Carlo simulation harness with confidence intervals.
 
-The simulator is the *independent check* of the exact analysis: it uses the
+This is the *independent check* of the exact analysis: it uses the
 same engine (reel strips, paylines, paytable) but random stops instead of an
 enumeration, and plays the feature as a real player would see it (spin by
 spin), instead of solving the Markov chain. If exact and simulated numbers
