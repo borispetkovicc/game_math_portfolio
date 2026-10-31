@@ -17,11 +17,11 @@ Three levels of exactness are used, each as cheap as the question allows:
    over the strip, then convolve the five reels (reels are independent).
 
 3. Joint distribution of (scatter count, total line win) for the whole grid.
-   Lines overlap, so the *distribution* of the total is not a product; we
+   Lines overlap, so the *distribution* of the total is not a product. We
    enumerate every stop combination (prod of strip lengths, ~3e7 for 5 reels
    of ~32 stops) in vectorised chunks. All combinations are equiprobable, so
-   a histogram of outcomes is the exact distribution. This is exactly what a
-   PAR sheet means by "total combinations".
+   a histogram of outcomes is the exact distribution. This is exactly "total
+   combinations" from PAR sheet.
 """
 
 from __future__ import annotations
