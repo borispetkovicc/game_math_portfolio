@@ -1,4 +1,4 @@
-"""Calibrate Kastel Fortune reel strips to the design targets and save them.
+"""Calibrate Kastel Fortune reel strips to the design targets.
 
 Usage:  python scripts/calibrate_kastel.py [--iters 400] [--target 0.962]
 
@@ -6,7 +6,7 @@ Steps
 1. Free-spin strips are fixed by design (they set the feature's "juice").
    Their per-spin outcome histogram is computed EXACTLY by full enumeration,
    and the feature's expected payout by the Markov-chain mean recursion.
-2. Base strips are tuned by greedy local search on symbol counts; the score
+2. Base strips are tuned by greedy local search on symbol counts. The score
    uses exact line/scatter means, so the final RTP is exact (not a Monte-Carlo
    estimate). Hit frequency is checked afterwards with a short simulation.
 3. The calibrated strips are written to games/kastel_fortune_reels.json.
