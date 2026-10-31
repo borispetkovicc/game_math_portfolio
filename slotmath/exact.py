@@ -8,7 +8,7 @@ Three levels of exactness are used, each as cheap as the question allows:
    count(symbol on reel) / strip length, independently across reels.
    The expected win of ONE line is therefore a finite sum over all symbol
    5-tuples (n_symbols**5 terms) and every line has the same distribution.
-   => line RTP = n_lines * E[single line win]. Cheap and exact.
+   => line RTP = n_lines * E[single line win].
 
 2. Scatter count distribution.
    Scatters are counted anywhere in the window. Within a reel the rows are
