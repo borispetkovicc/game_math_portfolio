@@ -1,6 +1,6 @@
 """Game-level RNG tests on the stop generator used by the simulator (NumPy PCG64).
 
-These are the statistical checks a test lab runs on the *mapping from raw random
+Statistical checks a test lab runs on the *mapping from raw random
 numbers to game outcomes* (on top of bit-level batteries such as NIST SP 800-22,
 Dieharder or TestU01 on the raw generator):
 
@@ -8,7 +8,7 @@ Dieharder or TestU01 on the raw generator):
 2. Independence between reels            — chi-square on the (reel i stop, reel j stop) contingency table
 3. Serial independence within a reel     — chi-square on consecutive-spin pairs (lag 1) and the runs test
 4. Symbol frequencies vs the strip        — chi-square on observed symbols in the top row
-5. Modulo bias demonstration             — why `raw % L` is not uniform and rejection sampling is
+5. Modulo bias demonstration             — why "raw % L" is not uniform and rejection sampling is
 
 Usage: python scripts/rng_tests.py [--spins 2000000]
 A healthy generator gives p-values spread over (0, 1); systematic p < 0.01 across tests = bias.
