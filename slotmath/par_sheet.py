@@ -1,7 +1,6 @@
 """PAR-sheet generation (Markdown).
 
-A PAR sheet ("Probability Accounting Report") is the document a studio hands to a
-test lab / regulator: everything needed to verify the game's RTP from first
+A PAR sheet: everything needed for a test lab/regulator to verify the game's RTP from first
 principles — reel strips, paytable, every symbol's probability per reel, the
 contribution of every winning combination, feature rules and statistics, and
 the resulting payout distribution.
